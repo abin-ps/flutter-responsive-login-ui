@@ -14,6 +14,7 @@ class SocialButton extends StatelessWidget {
       icon: SvgPicture.asset(iconPath, width: 25, colorFilter: const ColorFilter.mode(Palette.whiteColor, BlendMode.srcIn)),
       label: Text(label, style: const TextStyle(color: Palette.whiteColor, fontSize: 17)),
       style: TextButton.styleFrom(
+          fixedSize: const Size.fromWidth(400),
           padding: EdgeInsets.symmetric(vertical: 30, horizontal: horizontalPadding),
           shape: RoundedRectangleBorder(side: const BorderSide(color: Palette.borderColor, width: 3), borderRadius: BorderRadius.circular(10))),
     );
